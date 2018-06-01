@@ -27,4 +27,35 @@ INSERT INTO(大写) user(username,password) VALUES('zc','123')
 - @GetMapping("/{username}") @PathVariable("username")配合从RESTful风格URL中
 获取username
 > 例如http://localhost:8080/user/zc　,从该URL中提取zc赋值到username
-	
+
+---
+## 整合Swagger2
+#### 1.引入依赖
+```
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+```
+#### 2.创建Swageer2配置类
+#### 3.写生成文档的注解
+- @Api：修饰整个类，用于描述controller类
+- @ApiOperation：描述接口
+- @ApiParam：描述参数
+- @ApiModel：用对象来接收参数
+- @ApiProperty
+- @ApiResponse
+- @ApiResponses
+- @ApiIgnore：忽略该接口
+- @ApiError
+- @ApiParamImplicit
+- @ApiParamsImplicit
+
+#### 4.启动服务，在浏览器上访问http://localhost:8080/swagger-ui.html
