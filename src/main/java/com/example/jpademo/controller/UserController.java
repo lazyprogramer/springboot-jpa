@@ -1,7 +1,7 @@
 package com.example.jpademo.controller;
 
 import com.example.jpademo.Service.UserService;
-import com.example.jpademo.entity.User;
+import com.example.jpademo.domain.User;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

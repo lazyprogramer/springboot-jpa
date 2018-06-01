@@ -1,7 +1,7 @@
 package com.example.jpademo.Service;
 
-import com.example.jpademo.dao.UserDao;
-import com.example.jpademo.entity.User;
+import com.example.jpademo.domain.UserDao;
+import com.example.jpademo.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
