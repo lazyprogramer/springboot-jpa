@@ -17,7 +17,12 @@ public class UserService {
     }
     public List<User> findAll() {return userRepository.findAll();}
     public User saveUser(User user) {return userRepository.save(user);}
-    public User findUserById(long id) {return userRepository.findOne(id);}
+
+    //TODO 无法找到findOne该方法
+//    public User findUserById(long id) {
+//        return userRepository.findOne();
+//    }
     public User updateUser(User user) {return userRepository.saveAndFlush(user);}
-    public void deleteUser(User user) {userRepository.delete(user);}
+    //TODO 无法找到delete方法
+    public void deleteUser(long id) {userRepository.deleteById(id);}
 }
